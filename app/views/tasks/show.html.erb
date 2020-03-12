@@ -4,14 +4,14 @@
 
 <p>
   <strong>【タイトル】</strong>
-  <%= @task.title %>
 </p>
+  <p><%= @task.title %></p>
 
 <p>
   <strong>【内容】</strong>
-  <%= @task.body %>
 </p>
+  <p><%= @task.body %></p>
 
 <%= link_to '編集', edit_task_path(@task) %> 
-<%= link_to '削除', @task, method: :delete, data: { confirm: 'Are you sure?' }  %>
+<%= link_to '削除', @task, method: :delete %>
 <%= link_to '戻る', tasks_path %>
